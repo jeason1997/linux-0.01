@@ -16,3 +16,17 @@ For more modern code there is Isoux fork of Linux-0.01 is compilable using NASM 
 
 https://github.com/isoux/linux-0.01
 
+
+编译：
+```
+$ sudo apt update
+$ sudo apt install build-essential bin86 gcc gcc-multilib qemu-system-x86 unzip
+
+$ git clone https://github.com/mariuz/linux-0.01
+$ cd linux-0.01
+$ make
+
+$ unzip hd_oldlinux.img.zip
+$ make run-curses # or make run
+```
+
